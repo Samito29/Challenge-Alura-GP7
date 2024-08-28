@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="./imagenes/Logo.png" alt="Logo de Alura" class="logo">
+        </a>
+    </header>
+    <main>
+        <section class="encriptador">
+            <textarea id="text-aviso" class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="aviso">
+                <p class="aviso-text">Sólo texto con letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button id="boton-encriptador" onclick="encrypt()" class="boton-encriptar">Encriptar</button>
+                <button id="boton-desencriptador" onclick="decrypt()" class="boton-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="tarjeta">
+            <div class="tarjeta-contenido">
+                <img src="./imagenes/Muñeco.png" alt="Imagen Muñeco" class="img-muñeco">
+                <p class="primer-texto">Ningún mensaje fue encontrado</p>
+                <p class="segundo-texto">Ingrese el texto que desea encriptar o desencriptar</p>
+            </div>
+                <textarea id="text-copiar" class="mensaje" cols="20" rows="10" placeholder="¡El resultado aparecerá aquí!" readonly></textarea>
+                <button id="boton-copiador" onclick="copyText()" class="boton-copiar">Copiar al Portapapeles</button>
+        </section>
+    </main>
+    <footer>    
+            <p class="copyright">&copy; Copyright 2024 - Desarrollado por Sandra Aristizabal para Alura Latam</p>        
+            <a href="https://www.linkedin.com/in/sandra-aristizabal-960133190/" target="_blank" rel="noopener noreferrer">
+            <img src="./imagenes/linkedin4.png" alt="Logo LinkedIn" class="linked">
+            </a> 
+            <a href="https://github.com/Samito29" target="_blank" rel="noopener noreferrer">
+            <img src="./imagenes/Github.png" alt="Logo Githug" class="git">
+            </a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
